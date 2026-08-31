@@ -276,6 +276,14 @@ One-Line Summary
 
 Pointers contain addresses used by the program; with virtual memory, those addresses are normally virtual addresses that are translated to physical memory by the system.
 
+## Dereferencing a pointer using the indirection operator
+THe indirection opertor * returns the value pointed to by a pointer variable.This is frequently referrd to as dereferncing a pointer.
+
+```c
+int num=5;
+int *pi=&num;
+printf("%p \n,*pi)  // Dispalys 5
+```
 
 
 
