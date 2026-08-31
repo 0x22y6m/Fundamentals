@@ -55,7 +55,7 @@ cout << " Address of num " << pi << "value" <<*pi<<endl;
 ```
 
 
-Virtual Memory
+## Virtual Memory
 What is Virtual Memory?
 
 Virtual memory is a memory-management technique used by the operating system.
@@ -64,6 +64,7 @@ It gives each program its own virtual address space.
 
 A program uses virtual addresses, not direct physical RAM addresses.
 
+```c
 Program
    |
    v
@@ -77,24 +78,27 @@ Physical Address
    |
    v
 RAM
+```
 
-Virtual Address
+**Virtual Address**
 
 A virtual address is the address used by a program.
 
 Example:
 
-0x7ffd12345678
+```0x7ffd12345678```
 
 
 When we print a pointer, we normally see a virtual address.
 
+```c
 int num = 10;
 int *pi = &num;
 
 cout << pi << endl;
+```
 
-Physical Address
+### Physical Address
 
 A physical address refers to the actual location in physical RAM.
 
@@ -106,11 +110,12 @@ Pointers
 
 Example:
 
+```c
 int num = 10;
 int *pi = &num;
+```
 
-
-Remember:
+**Remember:**
 
 num    → value of num
 &num   → address of num
@@ -120,49 +125,52 @@ pi     → address stored in pi
 
 Because:
 
-pi = &num;
+```pi = &num;```
 
 
 we have:
 
-pi == &num
+```pi == &num```
 
 
 and:
 
-*pi == num
+```*pi == num```
 
-Pages and Frames
+### Pages and Frames
 
 Virtual memory is divided into pages.
 
 Physical RAM is divided into frames.
 
+```
 Virtual Memory          Physical RAM
 
 Page 0  ------------->  Frame 5
 Page 1  ------------->  Frame 2
 Page 2  ------------->  Frame 8
-
+```
 
 Pages do not need to be stored next to each other in RAM.
 
-Page Table
+### Page Table
 
 A page table keeps track of where virtual pages are located in physical memory.
 
+```
 Virtual Page → Physical Frame
 
 Page 0 → Frame 5
 Page 1 → Frame 2
 Page 2 → Frame 8
-
-MMU
+```
+### MMU
 
 MMU = Memory Management Unit
 
 The MMU helps translate virtual addresses into physical addresses.
 
+```c
 Virtual Address
        |
        v
@@ -173,8 +181,9 @@ Physical Address
        |
        v
       RAM
+```
 
-TLB
+### TLB
 
 TLB = Translation Lookaside Buffer
 
@@ -185,12 +194,13 @@ Virtual Page → Physical Frame
 
 It helps make address translation faster.
 
-Page Fault
+### Page Fault
 
 A page fault occurs when a program accesses a page that requires the operating system to handle its presence in memory.
 
 The OS handles the situation and, when appropriate, loads/maps the required page.
 
+```
 Program
    |
    v
@@ -207,23 +217,24 @@ Run  Page Fault
        v
     OS handles it
 
-
+```
 A page fault does not automatically mean there is a bug.
 
-Swapping
+### Swapping
 
 When memory is under pressure, the operating system may move pages between RAM and secondary storage.
 
+```
 RAM                 Storage
 
 Page A              Page B
 Page C              Page D
-
+```
 
 Later, a page can be brought back into RAM.
 
 Most Important Concept
-
+```
 Don't think:
 
 Pointer → Physical RAM
@@ -242,12 +253,13 @@ Physical Memory
 Quick Revision
 int num = 10;
 int *pi = &num;
+```
 
 num   → 10
 &num  → address of num
 pi    → address of num
 *pi   → 10
-
+```
 Key Terms
 Virtual Memory → Memory abstraction provided by the OS
 Virtual Address → Address used by a program
@@ -260,6 +272,7 @@ TLB → Caches recent address translations
 Page Fault → Requires OS memory-management handling
 Swapping → Moving pages between RAM and storage
 One-Line Summary
+```
 
 Pointers contain addresses used by the program; with virtual memory, those addresses are normally virtual addresses that are translated to physical memory by the system.
 
