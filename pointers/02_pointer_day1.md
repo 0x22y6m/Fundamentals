@@ -25,7 +25,7 @@ int * pi;
 int *pi;
 int*pi
 ```
-*** The use of white space is a matter of user preference.***
+** The use of white space is a matter of user preference.**
 The diagram below represents Three memory location are depicted by three rectangles. The number in the left is address of variable and the three dots represent uninitialized memory.
 
 Pointer to uninitialized memory can be problem, if pointer is dereferned , the pointer probably does not represent a valid address, it may not contain valid data. This will result in program termination on most platforms.
