@@ -285,7 +285,20 @@ int *pi=&num;
 printf("%p \n,*pi)  // Dispalys 5
 ```
 
+Fig : memory assigned using derefernce operator
 
+<img width="193" height="82" alt="image" src="https://github.com/user-attachments/assets/3162c5f6-2696-4020-b549-2e65a8e90e19" />
+
+
+## NULL and Related Concepts
+
+| Concept | Example | Meaning |
+|---|---|---|
+| **NULL pointer** | `int *p = NULL;` | Pointer points to nothing |
+| **Uninitialized pointer** | `int *p;` | Indeterminate value; don't use it |
+| **NUL character** | `'\0'` | Character with value zero |
+| **Empty string** | `""` | String containing zero characters |
+| **Null statement** | `;` | Statement that does nothing |
 
 
 
