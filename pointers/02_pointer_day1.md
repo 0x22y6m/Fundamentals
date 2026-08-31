@@ -44,6 +44,17 @@ This a backward declaration.
 
 <img width="358" height="118" alt="image" src="https://github.com/user-attachments/assets/a0f3a4e4-a495-4a14-8a47-3822dd1fb724" />
 
+### Displaying Pointer values
+```c
+int num=0;
+int *pi
+pi=&num
+cout<<"Address of num" <<&num<<"value " <<num<<endl;
+cout << " Address of num " << pi << "value" <<*pi<<endl;
+# both gives the same output
+```
+
+
 
 
 
