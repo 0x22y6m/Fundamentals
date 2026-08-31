@@ -8,7 +8,7 @@ pointer is a variable that stores the address of memory location **or** pointer 
 
 #### pointer downside
 - Accessing arrays and other data structures beyond their bounds
-• Referencing automatic variables after they have gone out of existence
-• Referencing heap allocated memory after it has been released
-• Dereferencing a pointer before memory has been allocated to it
+- Referencing automatic variables after they have gone out of existence
+- Referencing heap allocated memory after it has been released
+- Dereferencing a pointer before memory has been allocated to it
 
