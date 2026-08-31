@@ -301,8 +301,14 @@ Fig : memory assigned using derefernce operator
 | **Null statement** | `;` | Statement that does nothing |
 
 
+## Size of Pointer
 
-
+The size of pointer will remain same regardless of datatype .
+The pointer size reflects the maximum addressable memory space of the system. For example,
+```c
+8 bytes for a 64-bit System
+4 bytes for a 32-bit System
+```
 
 
 
