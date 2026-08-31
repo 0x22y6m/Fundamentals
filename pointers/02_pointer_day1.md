@@ -14,6 +14,9 @@ pointer is a variable that stores the address of memory location **or** pointer 
 
 ### Declaring Pointers
 Pointer variables are declared using a data type followed by an asterisk and then the pointer variable's name
- ``` int num;
-      int *pi; ```
+```c
+int num;
+int *pi;
+```
+
 
