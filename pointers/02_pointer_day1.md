@@ -13,7 +13,7 @@ pointer is a variable that stores the address of memory location **or** pointer 
 - Dereferencing a pointer before memory has been allocated to it
 
 ### Declaring Pointers
-Pointer variables are declared using a data type followed by an asterisk and then the pointer variable's anem
- ` int num;`
- `int *pi; `
+Pointer variables are declared using a data type followed by an asterisk and then the pointer variable's name
+ ``` int num;
+      int *pi; ```
 
