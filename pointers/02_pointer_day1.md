@@ -18,6 +18,7 @@ Pointer variables are declared using a data type followed by an asterisk and the
 int num;
 int *pi;
 ```
+
 The use of white spaces around the asterisk is irrelevant . The following declartionare all equivalent:
 ```c
 int* pi;
@@ -26,14 +27,15 @@ int *pi;
 int*pi
 ```
 **The use of white space is a matter of user preference.**
+
 The diagram below represents Three memory location are depicted by three rectangles. The number in the left is address of variable and the three dots represent uninitialized memory.
 
 Pointer to uninitialized memory can be problem, if pointer is dereferned , the pointer probably does not represent a valid address, it may not contain valid data. This will result in program termination on most platforms.
+
 **Memory Diagram**
 <img width="264" height="87" alt="image" src="https://github.com/user-attachments/assets/12ebb03e-3d20-4420-958a-ed430756112b" />
 
 The variables num and pi are located at addresses 100 and 104, respectively. Both are assumed to occupy four bytes.
-
 
 ### How to read a Pointer Declaration
 The best way to rad pointer declaration is to read them backward.
