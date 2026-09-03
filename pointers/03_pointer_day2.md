@@ -33,7 +33,7 @@ char ch[4]="abc"
 cout<<arr<<endl;  // gives the address - 0x505280
 cout<<ch<<endl;   // gives the whole charcter array - abc
 ```
-
+The behaviour for cout is implemented differently 
 
 
 
