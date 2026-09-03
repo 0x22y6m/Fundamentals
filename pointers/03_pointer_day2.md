@@ -35,6 +35,8 @@ cout<<ch<<endl;   // gives the whole charcter array - abc
 ```
 The behaviour for cout is implemented differently 
 
+Import YT chanel for windows internals : Cosmodium CyberSecurity
+
 
 
 
