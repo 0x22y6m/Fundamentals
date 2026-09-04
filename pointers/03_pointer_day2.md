@@ -38,7 +38,33 @@ The behaviour for cout is implemented differently
 Import YT chanel for windows internals : Cosmodium CyberSecurity
 
 
+# Pointer and Functions
 
+we can change the value present at the address , but we cannot change or forward the address to next location , in this scenarios there will be local pointer created in the function.
+
+```
+include <iostream>
+using namespace std;
+
+void print(int *ptr){
+ 
+    cout<<"The value " << *ptr<<endl;   
+    p=p+1                           // we are updating to local pointer
+   *p = *p +1                       // here we are dereferencing the address so changes will be appear in the global scope
+}
+
+int main ()
+{
+   
+    int value=5;
+    int *ptr=&value;
+    
+    print(ptr);
+  cout << value<<endl;
+  
+  return 0;
+}
+```
 
 
 
