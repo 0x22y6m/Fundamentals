@@ -17,5 +17,6 @@ int &j=i; // Reference variable
 
 # Memory address space layout
 
-<img width="1503" height="961" alt="image" src="https://github.com/user-attachments/assets/853c5cf6-f202-43f5-bfdb-774d36f7715c" />
+<img width="1475" height="938" alt="image" src="https://github.com/user-attachments/assets/7c621ffc-9b81-4475-9f91-ba1c6dc1cb3f" />
+
 
